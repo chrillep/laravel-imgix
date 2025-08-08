@@ -32,7 +32,7 @@ abstract class TestCase extends OrchestraTestCase
         config(['imgix.sources.default.includeLibraryParam' => false]);
     }
 
-    protected function blade(string $template, array $data = []): string
+    protected function blade(string $template, $data = []): string
     {
         $tempDirectory = sys_get_temp_dir();
 
